@@ -176,9 +176,9 @@ btn-full:visited{
 }
 
 .btn-ghost:link,
-btn-ghost:visited{
+.btn-ghost:visited{
    color:  #e67e22;
-   border: 1px solid #e67e22;
+   border: 1px solid #f09442;
  
 }
 
@@ -308,16 +308,26 @@ btn:active{
 .footer-link:link,
 .footer-link:visited
 {
-   color: #e67e22;
+   color: #e6e0db;
     text-decoration: none;
-    padding: 1px;
-    border-bottom: 1px solid #e67e22 ;
+    padding: 5px;
+    
     transition: border-bottom  0.2s , color 0.2s; 
+    
+}
+
+
+.footer-link:hover,
+.footer-link:active
+{
+   color: #22ceed;
+    
     
 }
 
 footer{
     background: #888888;
+    padding: 30px;
    
 }
 .footer-nav li {
@@ -343,6 +353,13 @@ footer{
     list-style: none;
     float: right;
    
+}
+
+footer p {
+    
+    padding: 30;
+    text-align: center;
+    
 }
 
 /*===============================================*/
@@ -534,6 +551,7 @@ header{
     height: 100vh;
     background-attachment: fixed;
 }
+
 
 
 .hero-text-box{
