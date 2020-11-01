@@ -31,7 +31,6 @@
     
  .steps-box{margin-top: 10px;}
     .steps-box:last-child{margin-top: 10px;}
-   
     .works-step { margin-bottom: 40px;}
 
     .works-step:last-of-type { margin-bottom: 80px;}
@@ -86,9 +85,15 @@
 @media only screen and (max-width: 767px) {
     
     body { font-size: 16px;}
+    .steps-box:fast-child{
+        margin-top: 10px;
+    }
+    .col {
+	width: 100%;
+        margin-bottom: 4%;
+} 
     
     .row ,.hero-text-box{padding:0 4%;}
-    .col {width:100%;}
     .main-nav{display: none;}
     h1 {font-size: 180%;}
      h1 {font-size: 150%;}
@@ -101,13 +106,6 @@
     
     .works-step{ margin-bottom: 20px;}
     .works-step:last-of-type { margin-bottom: 20px;}
-    
-     .steps-box:fast-child{text-align: center;}
-    
-    .app-screen {
-       width: 80%;
-        margin-right: 10%;
-        }
 }
 
 
@@ -115,7 +113,13 @@
 /* small phones: from 0 to 480px   ex old iphones  5,5s */
 
 @media only screen and (max-width:480px){
-    
-    
-    
+        section { padding: 25px 0; }
+    .contact-form {width: 100%; }
+ .app-screen {
+       width: 80%;
+     margin-right: 10%;
 }
+}
+
+    
+    
