@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -102,6 +103,8 @@ h3{
 /*                 customer testimonial          */
 /*===============================================*/
 .section-testimonial{
+    
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))), url(img/back-customers.jpg);
     
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url(img/back-customers.jpg);
     background-size: cover;
@@ -236,8 +239,12 @@ btn:active{
     width: 100%;
    
     height: auto;
+    -webkit-transform: scale(1.4);
     transform: scale(1.4);
+    -webkit-transition: opacity 0.4s , -webkit-transform 0.4s;
+    transition: opacity 0.4s , -webkit-transform 0.4s;
     transition: transform 0.4s , opacity 0.4s;
+    transition: transform 0.4s , opacity 0.4s , -webkit-transform 0.4s;
     
 }
 
@@ -246,6 +253,7 @@ btn:active{
     opacity: 1;
     width: 100%;
     height: auto;
+    -webkit-transform: scale(1.03);
     transform: scale(1.03);
 
  
@@ -261,6 +269,7 @@ btn:active{
     text-decoration: none;
     padding: 1px;
     border-bottom: 1px solid #e67e22 ;
+    -webkit-transition: border-bottom  0.2s , color 0.2s;
     transition: border-bottom  0.2s , color 0.2s;
 }
 
@@ -311,6 +320,8 @@ btn:active{
    color: #e6e0db;
     text-decoration: none;
     padding: 5px;
+    
+    -webkit-transition: border-bottom  0.2s , color 0.2s;
     
     transition: border-bottom  0.2s , color 0.2s; 
     
@@ -417,6 +428,7 @@ margin: 10px 5px 10px 0px;
     border-radius: 10px;
     width: 90%;
     margin-left: 5%;
+    -webkit-box-shadow: 0 5px 5px #5c5c5c;
     box-shadow: 0 5px 5px #5c5c5c;
     
 }
@@ -545,6 +557,7 @@ margin: 10px 5px 10px 0px;
 
 
 header{
+    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0, 0, 0, 0.7)),to(rgba(0, 0, 0, 0.7))),url(img/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url(img/hero.jpg);
     background-size: cover;
     background-position: center;
@@ -560,9 +573,11 @@ header{
     width: 1140px;
     top: 50%;
     left: 50%;
+    -webkit-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
     
 }
+
 
 .logo{
     height: 100px;
@@ -573,6 +588,18 @@ header{
     
 }
 
+.logo-black{
+    display: none;
+    height: 50px;
+    width: auto;
+    float: left;
+    margin-top: 5px 0px;
+   
+    
+    
+}
+
+/* ======== main nav========= */
 .main-nav{
     
     float: right;
@@ -580,6 +607,8 @@ header{
     list-style: none;
     margin-top: 55px;
 }
+
+
 
 .main-nav li {
     
@@ -596,6 +625,7 @@ header{
     font-size: 90%;
     padding:8px;
     border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
     transition: border-bottom 0.2s;
 }
 
@@ -614,5 +644,47 @@ header{
     margin-right: 10px;
 }
 
+/* ======== sticky nav========= */
+
+
+.sticky{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.98);
+    -webkit-box-shadow: 0 5px 5px rgb(193, 191, 191);
+    box-shadow: 0 5px 5px rgb(193, 191, 191);
+    z-index: 9999;
+   
+}
+
+.main-nav{
+        margin-top: 15px;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited{
+    
+   color: #555;
+   
+    padding:15px 0;
+
+   
+}
+
+
+.sticky  .logo{
+  display: none;
+    
+    
+}
+
+.sticky  .logo-black{
+  display: block;
+    
+    
+}
 
 
